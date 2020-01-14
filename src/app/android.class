@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Install lampp webserver to Android
+#
+# @author Ayus Irfang Filaras <ayus.sahabat@gmail.com>
+# @since version v1.0.0
+# @license MIT
+# @link https://github.com/apolbox/lampp
