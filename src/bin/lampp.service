@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Lampp script binary
+#
+# @author Ayus Irfang Filaras <ayus.sahabat@gmail.com>
+# @since version v1.0.0
+# @license MIT
+# @link https://github.com/apolbox/lampp
+declare -r rootdir="${HOME}"
+
+# Memanggil file autoload
+. ${rootdir}/.lampp/libautoload.lampp
+
+# Create class object
+package lampp
+
+# Menerima argument dari terminal
+lampp.service ${1} ${2}

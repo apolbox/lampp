@@ -39,7 +39,7 @@ linux.welcome()
 linux.packageList()
 {
     # Daftar paket yang terinstall dan belum terinstall
-    app.progress "[+] Tunggu sebentar, sedang memuat paket" 1
+    app.progress "[+] Tunggu sebentar, sedang memuat paket" 4
     printf "\e[34m%s, %s, %s\e[0m\n" "Status" "Nama paket" "Keterangan" > ${tmp}/paket.txt
 
     for iu in ${!requirement[@]}
@@ -67,4 +67,7 @@ linux.webserver()
     }
     clear
     app.requirementPackage $requirement && linux.welcome ${tmp}
+
+    # Pengaturan tambahan untuk lampp webserver
+    settings.addons; settings.lamppScript;
 }
